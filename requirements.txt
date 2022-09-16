@@ -1,4 +1,8 @@
-# tensorflow
-transformers
 streamlit
+transformers
+typing
+wikipedia
+
+# youtube-transcript-api
 # gradio
+# tensorflow
