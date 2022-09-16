@@ -2,6 +2,7 @@ streamlit
 transformers
 typing
 wikipedia
+tensorflow
 
 # youtube-transcript-api
 # gradio
