@@ -9,8 +9,8 @@ model_name = "deepset/roberta-base-squad2"
 
 @st.cache
 def get_qa_pipeline() -> Pipeline:
-#    qa = pipeline("question-answering")
-    qa = pipeline("question-answering", model=model_name, tokenizer=model_name)
+    qa = pipeline("question-answering")
+#    qa = pipeline("question-answering", model=model_name, tokenizer=model_name)
     return qa
 
 
