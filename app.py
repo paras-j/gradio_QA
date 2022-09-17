@@ -22,12 +22,14 @@ if __name__ == "__main__":
     raw_text = load_file()
     if raw_text != None and raw_text != '':
 
+        model_name = "deepset/roberta-base-squad2"
+        
         # Display text
         with st.expander("See text"):
             st.write(raw_text)
 
         # Perform question answering
-        question_answerer = pipeline('question-answering')
+        question_answerer = pipeline("question-answering", model=model_name, tokenizer=model_name)
 
         answer = ''
         question = st.text_input('Ask a question')
